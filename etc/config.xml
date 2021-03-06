@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ *
+ * Adapttive/Catalog: Module for Magento 2 to manage catalog release by a pre-specified date.
+ *
+ * @category PHP
+ * @package Adapttive
+ * @subpackage Ui
+ * @author Milind Singh <hello@adapttive.com>
+ * @copyright 2020 Milind Singh
+ * @license MIT
+ * @version 1.0.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <adapttive>
+            <catalog>
+                <enabled>1</enabled>
+            </catalog>
+        </adapttive>
+    </default>
+</config>

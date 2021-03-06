@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Quote\Api\CartItemRepositoryInterface">
+        <plugin name="adapttive_validate_add_to_cart_api" type="Adapttive\Catalog\Plugin\Quote\Item\Repository" sortOrder="1" disabled="false"/>
+    </type>
+    <type name="Magento\Checkout\Model\Cart">
+        <plugin name="adapttive_validate_add_to_cart" type="Adapttive\Catalog\Plugin\Checkout\ValidateAddToCart" sortOrder="10"/>
+    </type>
+    <type name="Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\General">
+        <plugin name="adapttive_release_date_time_show_time" type="Adapttive\Catalog\Plugin\Ui\DataProvider\Product\Form\Modifier\General" sortOrder="10"/>
+    </type>
+</config>
